@@ -35,6 +35,7 @@ namespace AspnetIdentitySample
             //Create Role Test and User Test
             RoleManager.Create(new IdentityRole(test));
             UserManager.Create(new ApplicationUser() { UserName = test });
+            
 
             //Create Role Admin if it does not exist
             if (!RoleManager.RoleExists(name))
